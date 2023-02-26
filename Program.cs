@@ -22,5 +22,7 @@ app.UseHttpsRedirection();
 
 app.MapMethods(CategoryPost.Template, CategoryPost.Methods, CategoryPost.Handle);
 app.MapMethods(CategoryListAll.Template, CategoryListAll.Methods, CategoryListAll.Handle);
+app.MapMethods(CategoryPut.Template, CategoryPut.Methods, CategoryPut.Handle);
+app.MapMethods(CategoryDelete.Template, CategoryDelete.Methods, CategoryDelete.Handle);
 
 app.Run();
