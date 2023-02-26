@@ -21,5 +21,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapMethods(CategoryPost.Template, CategoryPost.Methods, CategoryPost.Handle);
+app.MapMethods(CategoryListAll.Template, CategoryListAll.Methods, CategoryListAll.Handle);
 
 app.Run();
